@@ -34,3 +34,10 @@ const remove_accent = string => {
 }
 
 console.log(remove_accent(textByLine))
+
+// print it in a .txt 
+
+fs.writeFile('Output.txt', sentence.join(""), (err) => { 
+     // In case of a error throw err. 
+    if (err) throw err; 
+}) 
